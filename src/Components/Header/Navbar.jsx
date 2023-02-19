@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { menuItems } from "./MenuItemsList";
 import NavContent from "./NavContent";
-
-const SearchAnime = React.lazy(() => import("../Animes/SearchAnime"));
+import SearchAnime from "../Animes/SearchAnime";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,9 +41,7 @@ export default function Navbar() {
               {renderNavContent()}
             </ul>
 
-            <React.Suspense fallback={<div>Loading...</div>}>
-              <SearchAnime />
-            </React.Suspense>
+            <SearchAnime />
           </div>
         </div>
       </nav>

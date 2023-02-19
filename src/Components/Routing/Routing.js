@@ -1,31 +1,14 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
-
-const RenderAnimes = lazy(() => import("../Animes/RenderAnimes"));
-const EachAnimeDetails = lazy(() =>
-  import("../individualAnime/EachAnimeDetail")
-);
+import RenderAnimes from "../Animes/RenderAnimes.jsx";
+import EachAnimeDetails from "../individualAnime/EachAnimeDetail.jsx";
 
 export default function Routing() {
   return (
     <>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Suspense fallback={<div>Loading...</div>}>
-              <RenderAnimes />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/anime/:id"
-          element={
-            <Suspense fallback={<div>Loading...</div>}>
-              <EachAnimeDetails />
-            </Suspense>
-          }
-        />
+        <Route path="/" element={<RenderAnimes />} />
+        <Route path="/anime/:id" element={<EachAnimeDetails />} />
         <Route path="/serials" element={<h1>Serials</h1>} />
         <Route path="/serials/team" element={<h1>Our Team</h1>} />
         <Route path="/serials/story" element={<h1>Our Story</h1>} />

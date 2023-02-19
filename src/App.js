@@ -1,9 +1,9 @@
-import React, { createContext, useState, lazy, Suspense } from "react";
-const NavBar = lazy(() => import("./Components/Header/Navbar"));
-const Routing = lazy(() => import("./Components/Routing/Routing"));
-const Carousel = lazy(() => import("./Components/Carousel/Carousel"));
-const Footer = lazy(() => import("./Components/Footer/Footer"));
-const Footer2 = lazy(() => import("./Components/Footer/Footer2"));
+import React, { createContext, useState } from "react";
+import NavBar from "./Components/Header/Navbar";
+import Carousel from "./Components/Carousel/Carousel";
+import Routing from "./Components/Routing/Routing";
+import Footer from "./Components/Footer/Footer";
+import Footer2 from "./Components/Footer/Footer2";
 
 export const AnimeContext = createContext();
 
@@ -26,13 +26,11 @@ function App() {
 
   return (
     <AnimeContext.Provider value={animeContext}>
-      <Suspense fallback={<div>Loading...</div>}>
-        <NavBar />
-        <Carousel />
-        <Routing />
-        <Footer />
-        <Footer2 />
-      </Suspense>
+      <NavBar />
+      <Carousel />
+      <Routing />
+      <Footer />
+      <Footer2 />
     </AnimeContext.Provider>
   );
 }

@@ -1,13 +1,12 @@
-import { lazy, Suspense, useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { AnimeContext } from "../../App";
+import { AnimeContext } from "../../App.js";
 import AnimeCard from "./AnimeCard";
+import FilterAnimes from "./FilterAnimes";
+import LoadMore from "./LoadMore";
 
 const API_URL = "https://api.jikan.moe/v4/anime";
 const ANIMES_PER_PAGE = 4;
-
-const FilterAnimes = lazy(() => import("./FilterAnimes"));
-const LoadMore = lazy(() => import("./LoadMore"));
 
 export default function RenderAnimes() {
   const { searchInput, everyAnime, setEveryAnime, filteredResults } =
@@ -52,12 +51,10 @@ export default function RenderAnimes() {
 
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
-        <FilterAnimes
-          everyAnime={everyAnime}
-          setFilterBasedOnGenre={setFilterBasedOnGenre}
-        />
-      </Suspense>
+      <FilterAnimes
+        everyAnime={everyAnime}
+        setFilterBasedOnGenre={setFilterBasedOnGenre}
+      />
       <main role="main" className="container">
         <section className="row align-items-center">
           <div className="col-md-6">
