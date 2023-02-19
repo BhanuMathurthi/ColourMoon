@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.navbar-nav .nav-item {
+  padding: 0 0.3rem;
+}
+
+.footer-content {
+  font-size: 14px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-weight: bold;
+  filter: brightness(200%);
+}
+
+
+
+
