@@ -1,37 +1,13 @@
 {
   "files": {
     "main.css": "/colourmoon/static/css/main.65eda219.css",
-    "main.js": "/colourmoon/static/js/main.f0d6bf90.js",
-    "static/js/97.ef37dac4.chunk.js": "/colourmoon/static/js/97.ef37dac4.chunk.js",
-    "static/js/535.c4a04910.chunk.js": "/colourmoon/static/js/535.c4a04910.chunk.js",
-    "static/js/137.8c577c16.chunk.js": "/colourmoon/static/js/137.8c577c16.chunk.js",
-    "static/js/500.2e0595f0.chunk.js": "/colourmoon/static/js/500.2e0595f0.chunk.js",
-    "static/js/250.a118ee01.chunk.js": "/colourmoon/static/js/250.a118ee01.chunk.js",
-    "static/js/691.cee5a98e.chunk.js": "/colourmoon/static/js/691.cee5a98e.chunk.js",
-    "static/js/645.391698f4.chunk.js": "/colourmoon/static/js/645.391698f4.chunk.js",
-    "static/js/331.2a4426ec.chunk.js": "/colourmoon/static/js/331.2a4426ec.chunk.js",
-    "static/js/746.fdb797be.chunk.js": "/colourmoon/static/js/746.fdb797be.chunk.js",
-    "static/js/669.809b8fb8.chunk.js": "/colourmoon/static/js/669.809b8fb8.chunk.js",
-    "static/js/135.fc363597.chunk.js": "/colourmoon/static/js/135.fc363597.chunk.js",
-    "static/js/195.b13f9548.chunk.js": "/colourmoon/static/js/195.b13f9548.chunk.js",
+    "main.js": "/colourmoon/static/js/main.d1f93289.js",
     "index.html": "/colourmoon/index.html",
     "main.65eda219.css.map": "/colourmoon/static/css/main.65eda219.css.map",
-    "main.f0d6bf90.js.map": "/colourmoon/static/js/main.f0d6bf90.js.map",
-    "97.ef37dac4.chunk.js.map": "/colourmoon/static/js/97.ef37dac4.chunk.js.map",
-    "535.c4a04910.chunk.js.map": "/colourmoon/static/js/535.c4a04910.chunk.js.map",
-    "137.8c577c16.chunk.js.map": "/colourmoon/static/js/137.8c577c16.chunk.js.map",
-    "500.2e0595f0.chunk.js.map": "/colourmoon/static/js/500.2e0595f0.chunk.js.map",
-    "250.a118ee01.chunk.js.map": "/colourmoon/static/js/250.a118ee01.chunk.js.map",
-    "691.cee5a98e.chunk.js.map": "/colourmoon/static/js/691.cee5a98e.chunk.js.map",
-    "645.391698f4.chunk.js.map": "/colourmoon/static/js/645.391698f4.chunk.js.map",
-    "331.2a4426ec.chunk.js.map": "/colourmoon/static/js/331.2a4426ec.chunk.js.map",
-    "746.fdb797be.chunk.js.map": "/colourmoon/static/js/746.fdb797be.chunk.js.map",
-    "669.809b8fb8.chunk.js.map": "/colourmoon/static/js/669.809b8fb8.chunk.js.map",
-    "135.fc363597.chunk.js.map": "/colourmoon/static/js/135.fc363597.chunk.js.map",
-    "195.b13f9548.chunk.js.map": "/colourmoon/static/js/195.b13f9548.chunk.js.map"
+    "main.d1f93289.js.map": "/colourmoon/static/js/main.d1f93289.js.map"
   },
   "entrypoints": [
     "static/css/main.65eda219.css",
-    "static/js/main.f0d6bf90.js"
+    "static/js/main.d1f93289.js"
   ]
 }
