@@ -16,6 +16,33 @@ body {
   font-size: 14px;
 }
 
+.anime.center-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .anime.center-mobile {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .genre-buttons {
+    margin-top: 20px;
+  }
+}
+
+.genre-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   font-weight: bold;

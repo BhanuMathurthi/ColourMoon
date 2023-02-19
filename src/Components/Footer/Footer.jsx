@@ -6,8 +6,8 @@ const Footer = React.memo(() => {
     <>
       <footer className="bg-primary mt-5">
         <div className="container">
-          <div className="row text-light d-flex align-items-center">
-            <div className="col-md-6 d-flex align-items-center justify-content-start">
+          <div className="row text-light d-flex align-items-center justify-content-center justify-content-md-between">
+            <div className="col-md-6 d-flex align-items-center mb-3 mb-md-0">
               <p className="me-2 mb-0">Download App</p>
               <a href="https://example.com">
                 <img
@@ -24,7 +24,7 @@ const Footer = React.memo(() => {
                 />
               </a>
             </div>
-            <div className="col-md-6 d-flex align-items-center justify-content-end">
+            <div className="col-md-6 d-flex align-items-center justify-content-center justify-content-md-end">
               <p className="me-2 mb-0">Connect with us</p>
               <a href="!#">
                 <FaFacebook

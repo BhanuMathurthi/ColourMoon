@@ -7,24 +7,29 @@ export default function SearchAnime() {
   const [searchInput, setSearchInput] = useState("");
 
   const handleSearch = (e) => {
-    const input = e.target.value.trim().toLowerCase();
-    setSearchInput(input);
+    e.preventDefault();
+    const input = searchInput.trim().toLowerCase();
 
     const filteredAnime = everyAnime.filter((anime) =>
       anime.title.toLowerCase().includes(input)
     );
 
     setFilteredResults(filteredAnime);
+    setSearchInput("");
   };
 
   return (
     <nav>
-      <form className="input-group search d-flex" style={{ width: "200px" }}>
+      <form
+        className="input-group search d-flex"
+        style={{ width: "200px" }}
+        onSubmit={handleSearch}
+      >
         <label htmlFor="inp" className="visually-hidden">
           Search Anime
         </label>
         <input
-          onChange={handleSearch}
+          onChange={(e) => setSearchInput(e.target.value)}
           autoComplete="off"
           type="text"
           className="form-control"
@@ -32,7 +37,7 @@ export default function SearchAnime() {
           id="inp"
           value={searchInput}
         />
-        <button type="button" className="btn btn-dark">
+        <button type="submit" className="btn btn-dark">
           <FaSearch />
           <span className="visually-hidden">Search</span>
         </button>

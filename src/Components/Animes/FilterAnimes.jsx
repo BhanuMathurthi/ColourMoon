@@ -39,7 +39,7 @@ export default function FilterAnimes({ everyAnime, setFilterBasedOnGenre }) {
   return (
     <div className="container">
       <div className="row d-flex align-items-center mb-5">
-        <div className="col-md-6 bg-primary py-3">
+        <div className="col-md-6 text-center bg-primary py-3">
           <h5 className="text-light">TV SCHEDULE</h5>
           <Dropdown onSelect={handleDropdownSelect}>
             <Dropdown.Toggle variant="light" id="dropdown-basic">
@@ -55,14 +55,17 @@ export default function FilterAnimes({ everyAnime, setFilterBasedOnGenre }) {
             </Dropdown.Menu>
           </Dropdown>
           <span className="text-light">Nov 18, 2022</span>
-          <span className="text-light">|</span>
+          <span className="text-light"> &nbsp; | &nbsp;</span>
           <span className="text-light">Friday 11:34 AM</span>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 text-center">
           <nav aria-label="Anime genre filter">
-            <ul className="genre-buttons d-flex flex-wrap mb-5">
+            <ul
+              className="genre-buttons d-flex flex-wrap mb-5"
+              style={{ height: "100%" }}
+            >
               {genreButtons.map(({ id, label }) => (
-                <li key={id}>
+                <li key={id} style={{ marginRight: "10px" }}>
                   <button
                     id="filtered"
                     onClick={() => handleGenreButtonClick(id)}

@@ -13,7 +13,8 @@ export default function AnimeCard({ data }) {
   } = data;
 
   return (
-    <article className="col-lg-3 col-md-4 col-sm-6 anime">
+    <article className="col-lg-3 col-md-4 col-sm-6 anime center-mobile">
+      {/* Add the center-mobile class */}
       <Link
         to={`/anime/${mal_id}`}
         style={{ textDecoration: "none", color: "#000" }}

@@ -9,7 +9,7 @@ export default function LoadMore() {
   const [filterBasedOnGenre, setFilterBasedOnGenre] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [numRows, setNumRows] = useState(1); // state variable to track number of rows
-  const { searchInput, setEveryAnime, filteredResults } =
+  const { searchInput, setEveryAnime, filteredResults, setFilteredResults } =
     useContext(AnimeContext);
 
   useEffect(() => {
@@ -30,6 +30,13 @@ export default function LoadMore() {
     fetchAnimes();
   }, [setEveryAnime, setFilterBasedOnGenre, setIsLoading]);
 
+  useEffect(() => {
+    const filteredAnime = filterBasedOnGenre.filter((anime) =>
+      anime.title.toLowerCase().includes(searchInput)
+    );
+    setFilteredResults(filteredAnime);
+  }, [filterBasedOnGenre, searchInput, setFilteredResults]);
+
   // Get the list of animes based on searchInput or filterBasedOnGenre
   const animeList =
     searchInput.length > 1 ? filteredResults : filterBasedOnGenre;
@@ -40,7 +47,7 @@ export default function LoadMore() {
 
   // Handle load more button click
   const handleLoadMore = () => {
-    setNumRows(numRows + 1); // Increment number of rows on button click
+    setNumRows(numRows + 1); //
   };
 
   return (
@@ -75,7 +82,7 @@ export default function LoadMore() {
                     Loading...
                   </h2>
                 ) : (
-                  animeList
+                  filteredResults
                     .slice(rowStartIndex, rowEndIndex)
                     .map((data) => <AnimeCard key={data.mal_id} data={data} />)
                 )}
