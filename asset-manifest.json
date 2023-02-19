@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/colourmoon/static/css/main.65eda219.css",
-    "main.js": "/colourmoon/static/js/main.d1f93289.js",
+    "main.css": "/colourmoon/static/css/main.7fcab8e7.css",
+    "main.js": "/colourmoon/static/js/main.e60dd707.js",
     "index.html": "/colourmoon/index.html",
-    "main.65eda219.css.map": "/colourmoon/static/css/main.65eda219.css.map",
-    "main.d1f93289.js.map": "/colourmoon/static/js/main.d1f93289.js.map"
+    "main.7fcab8e7.css.map": "/colourmoon/static/css/main.7fcab8e7.css.map",
+    "main.e60dd707.js.map": "/colourmoon/static/js/main.e60dd707.js.map"
   },
   "entrypoints": [
-    "static/css/main.65eda219.css",
-    "static/js/main.d1f93289.js"
+    "static/css/main.7fcab8e7.css",
+    "static/js/main.e60dd707.js"
   ]
 }
